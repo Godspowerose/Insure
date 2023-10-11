@@ -578,4 +578,7 @@ footer a {
         display: block;
         position: absolute;
     }
+    .sidemenu {
+        height: 100vh;
+    }
 }
