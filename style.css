@@ -1,0 +1,581 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+header {
+    background-color: #2C2640;
+    color: #fff;
+}
+nav {
+    background-color: #fff;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+}
+.navbar ul {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.navbar li {
+    list-style: none;
+}
+.navbar a {
+    text-decoration: none;
+    color: #000;
+}
+.navbar button {
+    border: 1px solid #000;
+    background-color: transparent;
+    padding: 10px 20px;
+}
+.navbar button:hover {
+    background-color: #2C2640;
+    color: #fff;
+}
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px;
+    position: relative;
+}
+.line {
+    width: 150px;
+    height: 2px;
+    background-color: #fff;
+}
+.lefttext {
+    width: 530px;
+}
+.lefttext h1 {
+    font-size: 60px;
+    margin-top: 20px;
+}
+.lefttext p {
+    margin: 10px 0 20px;
+}
+.lefttext button {
+    position: relative;
+    z-index: 1;
+    border: 1px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    padding: 10px 20px;
+}
+.lefttext button:hover {
+    background-color: #fff;
+    color: #2C2640;
+}
+.pattern1 {
+    position: absolute;
+    right: 0;
+    /* top: -20px; */
+    z-index: 1;
+}
+.img1 {
+    position: relative;
+    top: 90px;
+}
+
+.pattern2 {
+    position: absolute;
+    top: 500px;
+}
+.first {
+    margin-top: 200px;
+    padding: 0 100px;
+}
+.line2 {
+    width: 150px;
+    height: 2px;
+    background-color: #2C2640;
+    margin-bottom: 40px;
+}
+.first h1 {
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.offers {
+    display: flex;
+    justify-content: space-between;
+}
+.offer {
+    display: grid;
+    gap: 15px;
+    padding: 10px;
+    width: 450px;
+}
+
+.second {
+    margin-top: 100px;
+    padding: 0 100px;
+}
+.sec {
+    position: relative;
+    max-width: 100%;
+    padding: 40px;
+    background-color: #2C2640;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    overflow: hidden;
+}
+.sech1 {
+    max-width: 50%;
+}
+.sec h1 {
+    font-size: 40px;
+    color: #fff;
+}
+.secbtn button {
+    position: relative;
+    z-index: 1;
+    border: 1px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    padding: 10px 20px;
+}
+.secbtn button:hover {
+    background-color: #fff;
+    color: #2C2640;
+}
+.pattern3 {
+    position: absolute;
+    right: 0;
+}
+
+footer {
+    margin-top: 100px;
+    background-color: #f8f8f8;
+    position: relative;
+}
+.pattern4 {
+    position: absolute;
+    z-index: 1;
+}
+.allf {
+    display: grid;
+    padding: 20px 100px;
+}
+.ftop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.icon {
+    margin-left: 15px;
+}
+.fline {
+    width: 100%;
+    height: 3px;
+    margin: 20px 0;
+    background-color: #F1F1F1;
+}
+.flinks {
+    display: flex;
+    gap: 200px;
+}
+footer ul p {
+    margin-bottom: 30px;
+}
+footer li {
+    list-style: none;
+    margin: 10px 0;
+    font-weight: bold;
+}
+footer a {
+    text-decoration: none;
+    color: #000;
+}
+
+.hamburgericon {
+    display: none;
+}
+.mobilep1, .mobilep2, .mobilep3, .mobilep4 {
+    display: none;
+}
+.sidemenuh {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    background-color: #fff;
+}
+.sidemenu {
+    background-color: #2C2640;
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.bgpattern {
+    position: relative;
+    width: 100vw;
+}
+.side {
+    margin-top: 50px;
+}
+.sidemenu ul {
+    display: grid;
+    place-items: center;
+    gap: 20px;
+}
+.sidemenu li {
+    list-style: none;
+}
+.sidemenu a {
+    text-decoration: none;
+    color: #fff;
+}
+.viewp {
+    position: relative;
+    z-index: 1;
+    border: 1px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    width: 100px;
+    padding: 10px 20px;
+}
+/* .sidemenu2 {
+    position: absolute;
+} */
+.sidemenu {
+    display: none;
+}
+
+
+/* Responsiveness for smartphones */
+@media (max-width: 770px) {
+    .head {
+        display: grid;
+    }
+    .line {
+        display: none;
+    }
+    .lefttext {
+        text-align: center;
+        margin-top: 40px;
+    }
+    .img1 {
+        top: 40px;
+    }
+    .first h1 {
+        text-align: center;
+    }
+    .line2 {
+        display: none;
+    }
+    .sec h1 {
+        font-size: 35px;
+    }
+    .flinks {
+        display: flex;
+        gap: 47px;
+    }
+    .hamburgericon {
+        display: none;
+    }
+    .mobilep1, .mobilep2, .mobilep3, .mobilep4 {
+        display: none;
+    }
+
+}
+@media (orientation: landscape) and (max-width: 1024px) {
+    .img1 {
+        height: 70vh;
+    }
+    .lefttext {
+        width: 355px;
+    }
+    .flinks {
+        gap: 120px;
+    }
+    .hamburgericon {
+        display: none;
+    }
+    .mobilep1, .mobilep2, .mobilep3, .mobilep4 {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .hamburgericon {
+        display: block;
+    }
+    header {
+        max-width: 100%;
+    }
+    .navbar ul {
+        display: none;
+    }
+    .navbar {
+        padding: 20px 30px;
+    }
+    .head {
+        padding: 0;
+        overflow: hidden;
+    }
+    .pattern1, .pattern2, .pattern3, .pattern4 {
+        display: none;
+    }
+    .lefttext {
+        padding: 50px 30px;
+        width: fit-content;
+    }
+    .lefttext h1 {
+        font-size: 40px;
+    }
+    .img1 {
+        max-width: 100%;
+        top: 0;
+        z-index: 1;
+    }
+    .rightitems {
+        grid-row: 1;
+        max-width: 100%;
+        /* position: relative;
+        top: -44px;
+        left: -30px; */
+    }
+    .first {
+        padding: 0 30px;
+    }
+    .offers {
+        display: grid;
+        gap: 20px;
+    }
+    .offer {
+        text-align: center;
+        display: grid;
+        place-items: center;
+        max-width: 100%;
+        width: fit-content;
+        padding: 0;
+    }
+    .second {
+        padding: 0 30px;
+    }
+    .sec {
+        display: grid;
+        place-items: center;
+        height: 180px;
+        text-align: center;
+    }
+    .sec h1 {
+        font-size: 20px;
+    }
+    .pattern3 {
+        position: absolute;
+        bottom: 66px;
+        left: 112px;
+    }
+    footer {
+        overflow: hidden;
+    }
+    .allf {
+        display: grid;
+        padding: 80px 30px;
+        place-items: center;
+        text-align: center;
+    }
+    .first h1 {
+        font-size: 45px;
+    }
+    .flinks {
+        display: grid;
+        gap: 47px;
+    }
+    .ftop {
+        display: grid;
+        place-items: center;
+        gap: 30px;
+    }
+    .mobilep1 {
+        display: block;
+        position: absolute;
+        top: 496px;
+    }
+    .mobilep2 {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 853px;
+    }
+    .mobilep3 {
+        display: block;
+        position: absolute;
+        right: 0;
+    }
+    .mobilep4 {
+        display: block;
+        position: absolute;
+    }
+}
+.sidemenu {
+    display: none;
+    position: fixed;
+    z-index: 2;
+}
+@media (orientation: landscape) and (max-width: 1000px) {
+
+
+
+    .head {
+        display: grid;
+    }
+    .line {
+        display: none;
+    }
+    .lefttext {
+        text-align: center;
+        margin-top: 40px;
+    }
+    .img1 {
+        top: 40px;
+    }
+    .first h1 {
+        text-align: center;
+    }
+    .line2 {
+        display: none;
+    }
+    .sec h1 {
+        font-size: 35px;
+    }
+    .flinks {
+        display: flex;
+        gap: 47px;
+    }
+    .hamburgericon {
+        display: none;
+    }
+    .mobilep1, .mobilep2, .mobilep3, .mobilep4 {
+        display: none;
+    }
+
+    .hamburgericon {
+        display: block;
+    }
+    header {
+        max-width: 100%;
+    }
+    .navbar ul {
+        display: none;
+    }
+    .navbar {
+        padding: 20px 30px;
+    }
+    .head {
+        padding: 0;
+    }
+    .pattern1, .pattern2, .pattern3, .pattern4 {
+        display: none;
+    }
+    .lefttext {
+        padding: 50px 30px;
+        width: fit-content;
+    }
+    .lefttext h1 {
+        font-size: 40px;
+    }
+    .img1 {
+        height: 100vw;
+        width: 100vw;
+        top: 0;
+        z-index: 1;
+    }
+    .rightitems {
+        grid-row: 1;
+        max-width: 100%;
+        /* position: relative;
+        top: -44px;
+        left: -30px; */
+    }
+    .first {
+        padding: 0 30px;
+    }
+    .offers {
+        display: grid;
+        gap: 20px;
+    }
+    .offer {
+        text-align: center;
+        display: grid;
+        place-items: center;
+        max-width: 100%;
+        width: auto;
+        padding: 0;
+    }
+    .second {
+        padding: 0 30px;
+    }
+    .sec {
+        display: grid;
+        place-items: center;
+        height: 180px;
+        text-align: center;
+        justify-content: center;
+    }
+    .sec h1 {
+        font-size: 30px;
+    }
+    .pattern3 {
+        position: absolute;
+        bottom: 66px;
+        left: 112px;
+    }
+    footer {
+        overflow: hidden;
+    }
+    .allf {
+        display: grid;
+        padding: 80px 30px;
+        place-items: center;
+        text-align: center;
+    }
+    .first h1 {
+        font-size: 45px;
+    }
+    .flinks {
+        display: grid;
+        gap: 47px;
+    }
+    .ftop {
+        display: grid;
+        place-items: center;
+        gap: 30px;
+    }
+    .mobilep1 {
+        display: block;
+        position: absolute;
+        top: 496px;
+    }
+    .mobilep2 {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 853px;
+        overflow: hidden;
+    }
+    .mobilep3 {
+        display: block;
+        position: absolute;
+        right: 0;
+    }
+    .mobilep4 {
+        display: block;
+        position: absolute;
+    }
+}
